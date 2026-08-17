@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const setLight = (action) => {
+        let Lightimg = "img/off.jpg";
+        if (action === "on") {
+          Lightimg = "img/on.jpg";
+        }
+        document.getElementById("light").src = Lightimg;
+      };
+    </script>
+
+    <p>
+      <img id="light" src="./img/off.jpg" width="100px" height="100px" />
+      <br />
+      <button type="button" onclick="setLight('on')">Light on</button>
+      <button type="button" onclick="SetLight('off')">Light off</button>
+    </p>
+  </body>
+</html>

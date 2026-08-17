@@ -1,0 +1,14 @@
+{
+  "name": "javascript-scripts",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "run": "node",
+    "start:lythuyet": "node Function/lythuyet.js",
+    "start:bai1": "node lythuyet/bai1.js",
+    "start:bai2": "node lythuyet/bai2.js",
+    "start": "npm run start:lythuyet",
+    "dev:lythuyet": "npx nodemon Function/lythuyet.js",
+    "dev": "npx nodemon Function/lythuyet.js"
+  }
+}
