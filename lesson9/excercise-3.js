@@ -52,3 +52,9 @@ let maxPrice = cart.reduce((max,item) =>{
 },cart[0]);
 console.log('San pham co gia cao nhat:', maxPrice);
 console.log('_____________________');
+
+// Yeu cau 5 - Tinh tong so item trong cart
+let sumItems = cart.reduce((total, item) =>{
+  return total + item.quantity;
+}, 0)
+console.log('Tong so san pham trong gio hang:', sumItems)
